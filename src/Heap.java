@@ -27,11 +27,15 @@ public class Heap {
     private ArrayList<Integer> heap;
 
     public Heap() {
-        heap = new ArrayList<>();
+        heap = new ArrayList<Integer>();
     }
 
     public boolean isEmpty() {
         return heap.isEmpty();
+    }
+
+    public int size() {
+        return heap.size();
     }
 
     private int parent(int i) {
